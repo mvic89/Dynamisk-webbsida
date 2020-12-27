@@ -1,0 +1,121 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <!-- Social-media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Jquery main-text fade-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if ($(this).scrollTop() > 0){
+                    $(".main-text").css({"opacity" : "0"})
+                }
+                else {
+                    $(".main-text").css({"opacity" : "1"})
+                }
+            })
+        })
+    </script>
+
+    <!--Jquery main-content-->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    if ($(this).scrollTop() > 0){
+                        $(".img").css({"opacity" : "1"})
+                    }
+                    else {
+                        $(".img").css({"opacity" : "0"})
+                    }
+                    if ($(this).scrollTop() > 0){
+                        $(".img-2").css({"margin-left" : "0px"})
+                    }
+                    else {
+                        $(".img-2").css({"margin-left" : "800px"})
+                    }
+                    
+                    if ($(this).scrollTop() > 0){
+                        $(".text").css({"opacity" : "1"})
+                    }
+                    else {
+                        $(".text").css({"opacity" : "0"})
+                    }
+                })
+            })
+        </script>
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <item class="logotype">
+                <img src="img/sthlm-xplore-website-logo.png" class="logotype" alt="sthlm-xplore-logo">
+            </item>
+            <nav>
+                <ul>
+                    <li><a href="index.html">OM OSS</a></li>
+                    <li><a href="gallery.html">GALLERI</a></li>
+                    <!-- <li><a href="index.html">BOKA</a></li> -->
+                    <li><a href="index.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Hero -->
+    <section class="main"> <!-- <img src="img/concrete-background.png" alt="concrete-background"> -->
+        <div class="container grid">
+            <div class="main-text">
+                <h1>Vi sätter <span style="color:white">ljus</span> på det undangömda <span style="color:white">Stockholm</span> Väkommen <span style="color:white">ner</span> på en visning</h1>
+            </div>
+            <item class="img">
+                <img src="img/underground-staicase.png" alt="">
+            </item>
+            <item class="text">
+                <h2>Hitta din anpassade rundvisning hos oss. 
+                    Allt ifrån underjordiska sjukhus till kärnvapensäkra lokalt i vår huvudstad. 
+                    <br>
+                    <br>
+                    För vidare information</h2>
+                    <br>
+                    <a href="gallery.html" class="btn">LÄS MER</a>
+            </item>
+            <item class="img-2">
+                <img src="img/klaraberget.png" alt="">
+            </item>
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    
+    <footer>
+        <div class="footer-content">
+            <img src="img/sthlm-xplore-website-logo.png" class="logotype" alt="sthlm-xplore-logo">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; Sthlm X-plore 2020</p>
+        </div>
+    </footer>
+
+
+
+</body>
+</html>

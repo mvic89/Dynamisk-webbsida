@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sodersjukhuset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <!-- Social-media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container flex">
+            <item class="logotype">
+                <img src="img/sthlm-xplore-website-logo.png" class="logotype" alt="sthlm-xplore-logo">
+            </item>
+            <nav>
+                <ul>
+                    <li><a href="index.html">OM OSS</a></li>
+                    <li><a href="gallery.html">GALLERI</a></li>
+                    <li><a href="index.html">KONTAKT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- Hero -->
+    <section class="main">
+        <div class="container grid-2">
+            <item class="headline">
+                <h1>Södersjukhusets bergrum</h1>
+            </item>
+            <item class="img">
+                <img name="slide" width="auto" height="auto">
+                <div class="text-phrases">
+                    <h1>Täckmantel</h1>
+                    <p>Det är ofta man hör folk prata om jättelika sjukhus som
+                        ligger belägna djupt nere i bergen runt om i landet. 
+                        Detta stämmer inte detta helt och hållet ,men ibland till
+                        en viss del. När man spränger ut stora bergrum som man vill 
+                        hålla hemligt för allmänheten och främst för fienden säger man 
+                        ofta att anläggningen har en annan funktion än vad den egentligen har. 
+                        Detta gör man för att det ska verka mindre intressant för fienden att 
+                        fortsätta snoka information.
+                    </p>
+                    <br>
+                    <p>Det man brukar säga är alltså att det är ett sjukhus. Tanken var att
+                        folk från allmänheten som vet om detta kommer därför inte att sprida
+                        detta vidare med p.g.a på att det här är platsen som dem kommer få 
+                        behandling om någonting skulle hända i ofred. Ett sjukhus är någonting
+                        som fienden inte prioriterar i första taget med tanke på att det finns
+                        viktigare funktioner att slå ut först. Men det finns givetvis mindre 
+                        varianter av sjukhus belägna i e.x. större militäranläggningar som 
+                        ska hjälpa de skadade i och runt anläggningen.
+                    </p>
+                    <br>
+                    <h1>Krigssjukhuset</h1>
+                    <p>Under Södersjukhuset konstruerades krigssjukhuset som var tänkt användas
+                        i ofred. Bakom en vanlig diskret branddörr i en utav sjukhusets korridorer 
+                        döljer sig nedförsbacken som tar en ned till det skyddade utrymmet bakom 
+                        tjocka ståldörrar och ett tiotal meter berg över huvudet. Bergrummet sprängdes
+                        ut i samband med byggnationen av Södersjukhuset och stod klart med sina 4.700kvm
+                        ungefär samtidigt som sjukhuset ovan mark. När detta byggdes fanns inte kärnvapenhotet
+                        och skyddet var därför inte lika robust som när bergrummet senare totalrenoverades.
+                    </p>
+                    <p>Då kriget tog slut stannade verksamheten av här nere. Under många år agerade bergrummet
+                        förråd till sjukhuset och skicket blev allt sämre och sämre. Anläggningen var i så pass 
+                        dåligt skick under en period att fukten var väldigt påtaglig. Men bergrummet skulle se ljusare tider..
+                    </p>
+                    <br>
+                    <h1>Disaster Emergency Center, DEMC</h1>
+                    <p>Idag är berganläggningen ett akut- och katastrofmedicinsktcentrum (Disaster Emergency Center, DEMC). 
+                        Anläggningen totalrenoverades efter att ha varit ett krigssjukhus och invigdes 1994 i sin nya karaktär
+                        med den standard som krävs för att klara akutsjukvården.  Här inne finns intensivvårdsavdelning, 
+                        operationsavdelning, vårdavdelning och uppvakning. Bergrummet kan idag ta in 160 patienter som ett 
+                        krigssjukhus eller 270 patienter i fred. Anläggningen kan även agera skyddsrum och är godkänd för 3.200 personer.
+                    </p>
+                    <br>
+                    <p class="vidare-info">Besök även vår <span>kontaktsida</span> för vidare information.</p>
+                </div>
+            </item>
+        </div>  
+    </section>
+
+    <!-- Footer -->
+    
+    <footer>
+        <div class="footer-content">
+            <img src="img/sthlm-xplore-website-logo.png" class="logotype" alt="sthlm-xplore-logo">
+            <ul class="social">
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; Sthlm X-plore 2020</p>
+        </div>
+    </footer>
+</body>
+
+
+
+<!-- Js.Image-slider -->
+<script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+    
+    images[0] = 'bild-1.png';
+    images[1] = 'bild-2.png';
+    images[2] = 'bild-3.png';
+    images[3] = 'bild-4.png';
+    
+    function changeImg(){
+        document.slide.src = images[i];
+    
+        if(i < images.length - 1){
+            i++;
+        } else {
+            i = 0;
+        }
+    
+        setTimeout("changeImg()", time);
+    }
+    
+    window.onload = changeImg;
+    </script>
+
+</html>
